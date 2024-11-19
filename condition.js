@@ -1,23 +1,23 @@
-// let x = 794;
-// let y = 7;
-// let answer = 794 % 7;
-// console.log(answer);
+let x = 794;
+let y = 7;
+let answer = 794 % 7;
+console.log(answer);
 
-// let too = 70;
+let too = 70;
 
-// if (too % 7 == 0) {
-//   if (too % 11 == 0) {
-//     console.log("2uuland huvaagdaj baina");
-//   } else {
-//     console.log("11d huvaagdahgui, 7d huvaagdana");
-//   }
-// } else {
-//   if (too % 11 == 0) {
-//     console.log("11d huvaagdana, 7d huvaagdahgui");
-//   } else {
-//     console.log("2uuland huvaagdahgui");
-//   }
-// }
+if (too % 7 == 0) {
+  if (too % 11 == 0) {
+    console.log("2uuland huvaagdaj baina");
+  } else {
+    console.log("11d huvaagdahgui, 7d huvaagdana");
+  }
+} else {
+  if (too % 11 == 0) {
+    console.log("11d huvaagdana, 7d huvaagdahgui");
+  } else {
+    console.log("2uuland huvaagdahgui");
+  }
+}
 
 // let too = 3;
 // let answer = 3 % 2;
@@ -37,6 +37,14 @@ console.log(answer);
 // 2. Write a program that checks if a number is even or odd.
 // Input: A number x.
 // Output: Print whether the number is even or odd.
+
+let too=2;
+
+if(too%2==0){
+  console.log("even");
+}else{
+  console.log("odd");
+}
 
 // 2.5. Write a program that checks if a number is even or odd and positive or negative
 // Input: A number x.
@@ -59,3 +67,83 @@ if (too % 2 == 0) {
 // Input: Two variables username and password.
 // If the username is "admin" and the password is "12345", print "Login successful!".
 // Otherwise, print "Login failed!”.
+
+let username = "admin";
+let password = 12345;
+
+if (username == "admin") {
+  if (password == 12345) {
+    console.log("successfull");
+  } else {
+    console.log("password buruu baina");
+  }
+} else {
+  if (password == 12345) {
+    console.log("username buruu baina");
+  } else {
+    console.log("username password buruu, failed");
+  }
+}
+
+// 4. Write a program that categorizes a person based on their age.
+// If age is less than 13, print "Child".
+// If age is between 13 and 19, print "Teenager".
+// Otherwise, print "Adult”.
+ let child=13;
+ let teenager=13-19;
+ let adult=20<
+ if{}
+ 
+ 
+//  5. Write a program that performs a basic arithmetic operation based on user input.
+// Inputs: Two numbers (num1, num2)
+// Output: Perform the 4 operations and print the result.
+// Example: 22 x 10 = 220
+//          22 / 10 = 2.2
+//          22 + 10 = 32
+//          22 - 10 = 12
+
+let too1=22;
+let too2=10;
+ console.log(too1, "x", too2,"=", too1*too2);
+ console.log(too1, "/", too2, "=", too1/too2);
+ console.log(too1, "+", too2, "=", too1+too2);
+ console.log(too1, "-", too2, "=", too1-too2);
+
+//  6. Write a program to check if a value is true or false.
+// Input: A variable value.
+// Output: Print whether the value is true or false.
+let utga="11";
+if(utga="10"){
+  console.log("true");
+}else{
+  console.log("false");
+}
+
+// 7. Write a program to convert a temperature from Celsius to Fahrenheit.
+// Formula: F = C * (9/5) + 32
+// Input: Celsius temperature.
+// Output: Converted Fahrenheit temperature.
+let cels=140;
+console.log(cels,"x",9,"/",5,"+",32,"=",cels*9/5+32);
+// 8. Write a program to check if a year is a leap year or not.
+// A year is a leap year if it is divisible by 4 but not divisible by 100 unless also divisible by 400.
+
+
+// 9. Write a program to find the smallest of three numbers.
+// Input: Three numbers a, b, and c.
+// Output: Print the largest number.
+let a=25;
+let b=20;
+let c=5;
+if(a>b){
+  if(b>c){console.log("b");
+  }else{
+    console.log("c");
+  }
+}else{
+  if(a>c){console.log("a");  
+  }else{
+console.log("c");
+}
+}
