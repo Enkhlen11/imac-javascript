@@ -64,15 +64,20 @@ for (let i = 1; i <= a; i = i + 1) {
   console.log(sum);
 }
 // Write a C program to find all factors of a number.
-let num=3;
-for()
-  // baasan garig baina
-let udur=5;
-  if(udur==1)console.log("monday");
-  if(udur==2)console.log('tuesday');
-  if(udur==3)console.log("wednsday");
-  if(udur==4)console.log("thursday");
-  if(udur==5)console.log("friday");
-  if(udur==6)console.log("saturday");
-  if(udur==7)console.log("sunday");
-  console.log();
+// 1,2,3,4,6,12
+let num = 12;
+for (let i = 1; i <= num; i++) {
+  if (num % i == 0) {
+    console.log("huvaagch", i);
+  }
+}
+
+// baasan garig baina
+let udur = 5;
+if (udur == 1) console.log("monday");
+if (udur == 2) console.log("tuesday");
+if (udur == 3) console.log("wednsday");
+if (udur == 4) console.log("thursday");
+if (udur == 5) console.log("friday");
+if (udur == 6) console.log("saturday");
+if (udur == 7) console.log("sunday");

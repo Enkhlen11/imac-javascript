@@ -57,6 +57,35 @@ printnumber(100);
 
 // 1ees n hvrtelh natural toonii niilber
 let sum = 0;
-function printnumber(n){
-    for(i=1)
+function printnumber(n) {
+  for (let i = 1; i <= n; i = i + 1) {
+    sum = sum + i;
+  }
+  console.log(sum);
 }
+printnumber(5);
+
+// 1ees n hvrtelh bvh tegsh toonuudiin niilberiig oloh
+
+function printnumber(n) {
+  let sum = 0;
+  for (let i = 1; i <= n; i = i + 1) {
+    if (n % i == 0) {
+      console.log(i);
+    }
+  }
+}
+
+printnumber(10);
+
+// 1ees n hvrtelh bvh sondgoi toonuudiin niilderiig oloh
+let sum = 0;
+function printnumber(n) {
+  for (let i = 1; i <= n; i = i + 1) {
+    sum = sum + i;
+  }
+  console.log(i);
+}
+
+printnumber(5);
+// vrjihiin hvrd
