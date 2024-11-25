@@ -98,3 +98,58 @@ function printnumber(n) {
   }
 }
 printnumber(5);
+
+// 1. Function too avaad gatsuur uusgeh
+//input: 3
+//output:
+//*
+//**
+//***
+function gatsuur(a) {
+  for (let i = 1; i <= a; i++) {
+    console.log("*");
+  }
+}
+gatsuur(3);
+// 2. functiond 3 too uguud hamgiin iheesee 2dhiign olno
+//input: (10, 11, 30)
+//output: 11
+function num(a, b, c) {
+  if (a > b) {
+    if (a > c) {
+      console.log(c);
+    } else {
+      console.log(a);
+    }
+  } else {
+    if (b > c) {
+      console.log(c);
+    } else {
+      console.log(b);
+    }
+  }
+}
+num(5, 2, 3);
+// 3. Functiond n too orj irhed ter too hurtel hevlene.
+//    hevlehdee 3t huvaagddag bol "Fizz" 5t huvaagddag bol "Buzz"
+//    2uulandn huvaagddag bol FizzBuzz
+//input: 15
+//output: 1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz .... 14, FizzBuzz
+function too(a) {
+  for (let i = 1; i <= a; i = i + 1) {
+    if (i % 3 == 0) {
+      if (i % 5 == 0) {
+        console.log(i, "FizzBuzz");
+      } else {
+        console.log(i, "Fizz");
+      }
+    } else {
+      if (i % 5 == 0) {
+        console.log(i, "Buzz");
+      } else {
+        console.log(i);
+      }
+    }
+  }
+}
+too(15);

@@ -138,9 +138,9 @@ let year=
 
 // 9. Write a program to find the smallest of three numbers.
 // Input: Three numbers a, b, and c.
-// Output: Print the largest number.
-let a = 25;
-let b = 20;
+// Output: Print the largest number.aa
+let a = 2;
+let b = 25;
 let c = 5;
 if (a > b) {
   if (a > c) {
