@@ -153,3 +153,104 @@ function too(a) {
   }
 }
 too(15);
+
+// *****
+// *****
+// *****
+// *****
+// *****
+function squareStar(num) {
+  for (let j = 0; j < num; j++) {
+    let str = "";
+    for (let i = 0; i < num; i++) {
+      str = str + "*";
+    }
+    console.log(str);
+  }
+}
+squareStar(5);
+
+// *****
+// *---*
+// *---*
+// *---*
+// *****
+// hollow square
+function hollowSquare(num) {
+  for (let j = 0; j < num; j++) {
+    let str = "";
+    for (let i = 0; i < num; i++) {
+      if (j == 0 || j == 4 || i == 0 || i == num - 1) {
+        str = str + "*";
+      } else {
+        str = str + " ";
+      }
+    }
+    console.log(str);
+  }
+}
+hollowSquare(5);
+
+// ----*j=0
+// ---**j=1
+// --***j=2
+// -****j=3
+// *****j=4
+// mirrored right triangle star pattern
+function mirrorRightTri(num) {
+  for (let j = 0; j < num; j++) {
+    let str = " ";
+    for (let i = 0; i < num - j - 1; i++) {
+      str = str + " ";
+    }
+    for (let i = 0; i <= j; i++) {
+      str = str + "*";
+    }
+    console.log(str);
+  }
+}
+mirrorRightTri(5);
+
+// ----*---- j=0 *->1
+// ---***--- j=1 *->3
+// --*****-- j=2 *->5
+// -*******- j=3 *->7
+// ********* j=4 *->9
+// pyramid star pattern
+function pyramid(num) {
+  for (let j = 0; j < num; j++) {
+    let str = " ";
+    for (let i = 0; i < num - j - 1; i++) {
+      str = str + " ";
+    }
+    for (let i = 0; i < j * 2 + 1; i++) {
+      str = str + "*";
+    }
+    console.log(str);
+  }
+}
+pyramid(5);
+
+// ----*---- j=0 *->1
+// ---*-*--- j=1 *->3
+// --*---*-- j=2 *->5
+// -*-----*- j=3 *->7
+// ********* j=4 *->9
+//hollow  pyramid star pattern
+function hollowPyramid(num) {
+  for (let j = 0; j < num; j++) {
+    let str = " ";
+    for (let i = 0; i < num - j - 1; i++) {
+      str = str + " ";
+    }
+    for (let i = 0; i <= j * 2; i++) {
+      if (i == 0 || j == num - 1 || i == j * 2) {
+        str = str + "*";
+      } else {
+        str = str + " ";
+      }
+    }
+    console.log(str);
+  }
+}
+hollowPyramid(5);

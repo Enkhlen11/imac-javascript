@@ -38,11 +38,11 @@ console.log(aver(num));
 let numbers = [30, 49, 30, 20, 456, 98];
 function findMin(arr) {
   for (i = 0; i < arr.length; i++) {
-    if (minNam > arr[i + 1]) {
-      maxNum = arr[i + 1];
+    if (minNum > arr[i + 1]) {
+      minNum = arr[i + 1];
     }
 
-    console.log(maxNum);
+    console.log(minNum);
   }
 }
 findMin(numbers);
