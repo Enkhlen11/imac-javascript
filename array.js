@@ -46,3 +46,45 @@ function findMin(arr) {
   }
 }
 findMin(numbers);
+
+// tegsh utguudiig oloh
+let numbers = [90, 47, 38, 29, 30, 70, 80, 99, 23, 43, 57];
+function findEvenNumbers(input) {
+  let evenNumbers = [];
+  for (let i = 0; i < input.length; i++) {
+    if (input[i] % 2 == 0) {
+      evenNumbers.push(input[i]);
+    }
+  }
+  return evenNumbers;
+}
+let answer = findEvenNumbers(numbers);
+console.log(answer);
+
+// sondgoi nasiig oloh
+let ages = [10, 33, 46, 86, 35, 28, 13];
+function findOddAges(arr) {
+  let oddAges = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 != 0) {
+      oddAges.push(arr[i]);
+    }
+  }
+  return oddAges;
+}
+let answer = findOddAges(ages);
+console.log(answer);
+
+// zarlagaa ylgaj hevleh
+let negative = [-455, 453, 656, -765, 5, -9, 4, 3, -7];
+function findNegativeNumber(arr) {
+  let negativeNumbers = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] < 0) {
+      negativeNumbers.push(arr[i]);
+    }
+  }
+  return negativeNumbers;
+}
+let answer = findNegativeNumber(negative);
+console.log(answer);
