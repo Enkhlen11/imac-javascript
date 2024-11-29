@@ -106,8 +106,10 @@ printnumber(5);
 //**
 //***
 function gatsuur(a) {
+  let od = "*";
   for (let i = 1; i <= a; i++) {
-    console.log("*");
+    console.log(od);
+    od = od + "*";
   }
 }
 gatsuur(3);

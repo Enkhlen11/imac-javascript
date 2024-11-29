@@ -66,7 +66,7 @@ let ages = [10, 33, 46, 86, 35, 28, 13];
 function findOddAges(arr) {
   let oddAges = [];
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i] % 2 != 0) {
+    if (arr[i] % 2 !== 0) {
       oddAges.push(arr[i]);
     }
   }
