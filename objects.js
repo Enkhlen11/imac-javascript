@@ -68,7 +68,7 @@ let students = [
   { name: "od", age: 29, grades: [80, 80, 30, 90, 80], gender: "male" },
   { name: "tegshee", age: 39, grades: [63, 56, 91, 12, 1], gender: "female" },
 ];
-neg studentiin dvngiin dundaj oloh
+// neg studentiin dvngiin dundaj oloh
 function findOneStudentAverageGrade(oneStudent) {
   let grades = oneStudent.grades;
   let sum = 0;
@@ -78,18 +78,29 @@ function findOneStudentAverageGrade(oneStudent) {
   let average = sum / grades.length;
   return average;
 }
+
 // console.log(findOneStudentAverageGrade(students[0]));
 
-// bvh studentiin dvngiin dundaj oloh
-function findAllStudentAverageGrade(allStudent) {
+// // bvh studentiin dvngiin dundaj oloh
+// function findAllStudentAverageGrade(allStudent) {
+//   let sum = 0;
+//   for (let i = 0; i < allStudent.length; i++) {
+//     let average = findOneStudentAverageGrade(allStudent[i]);
+//     sum = sum + average;
+//   }
+//   let allAverage = sum / students.length;
+//   console.log(allAverage);
+// }
+// findAllStudentAverageGrade(students);
+// //  nasnii dundaj oloh
+//  er emiin huvi oloh
+
+function findAllStudentAverageAge(allStudents) {
   let sum = 0;
   for (let i = 0; i < allStudent.length; i++) {
-    let average = findOneStudentAverageGrade(allStudent[i]);
     sum = sum + average;
   }
-  let allAverage = sum / students.length;
-  console.log(allAverage);
+  console.log(findAllStudentAverageAge(sum));
+  return average;
 }
-findAllStudentAverageGrade(students);
-//  nasnii dundaj oloh
-//  er emiin huvi oloh
+findAllStudentAverageAge(students);
