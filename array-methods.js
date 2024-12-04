@@ -1,36 +1,36 @@
-function sayHi(name) {
-  console.log("hello", name);
-}
-sayHi("andy");
+// function sayHi(name) {
+//   console.log("hello", name);
+// }
+// sayHi("andy");
 
-let greeting = (name) => {
-  console.log("hello", name);
-};
-function first(name) {
-  console.log("andy");
-}
-first("andy");
-const chatProgram = (a, b, c) => {
-  b();
-  console.log(a);
-  c();
-};
-let askQuestion = chatProgram(
-  null,
-  () => {
-    console.log("how are you");
-  },
-  first
-);
+// let greeting = (name) => {
+//   console.log("hello", name);
+// };
+// function first(name) {
+//   console.log("andy");
+// }
+// first("andy");
+// const chatProgram = (a, b, c) => {
+//   b();
+//   console.log(a);
+//   c();
+// };
+// let askQuestion = chatProgram(
+//   null,
+//   () => {
+//     console.log("how are you");
+//   },
+//   first
+// );
 
-function second(gender) {
-  console.log("gender", gender);
-}
-second("male");
+// function second(gender) {
+//   console.log("gender", gender);
+// }
+// second("male");
 
-function third(askQuestion) {
-  console.log();
-}
+// function third(askQuestion) {
+//   console.log();
+// }
 // filter nasand hvrsen hvn olno
 // dvngiin dundjaar sortloh
 // nasaar sortloh
@@ -66,4 +66,39 @@ let students = [
   { name: "od", age: 29, grades: [80, 80, 30, 90, 80], gender: "male" },
   { name: "tegshee", age: 39, grades: [63, 56, 91, 12, 1], gender: "female" },
 ];
-students.filter(() => {});
+// filter nasand hvrsen hvn olno
+// let filteredByAge = students.filter((adult) => {
+//   return adult.age >= 21;
+// });
+// console.log(filteredByAge);
+// dvngiin dundjaar sortloh
+
+// function oneStudentAverageGrade(input) {
+//   let grades = input.grades;
+//   let sum = 0;
+//   for (let i = 0; i < grades.length; i++) {
+//     sum = sum + grades[i];
+//   }
+//   let average = sum / grades.length;
+//   return average;
+// }
+
+// let maping = students.map((sum) => {
+//   return oneStudentAverageGrade(sum);
+// });
+// let sortedAverage = maping.sort((a, b) => {
+//   return a - b;
+// });
+// console.log(sortedAverage);
+
+// nasaar sortloh
+// let sortedByAge = students.sort((a, b) => {
+//   return a.age - b.age;
+// });
+// console.log(sortedByAge);
+
+//  zuvhun nernvvdees bvtsen array gargaj avah
+let nameList = students.map((List) => {
+  return List.name;
+});
+console.log(nameList);
