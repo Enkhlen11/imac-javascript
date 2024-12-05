@@ -50,44 +50,54 @@
 // //    Utasnii dugaariig formatalj zuv bolgoj haruulah
 // //    Output: "(976) 99123456"
 
-let phoneNumber = "97699123456";
-let format = phoneNumber.replace("976", "(976) ");
-console.log(format);
-// 4. Input: "I am fucking tired", 'fucking'
-//    Haraaliin ugiin censor hiih
-//    Output: "I am **** tired"
+// let phoneNumber = "97699123456";
+// let format = phoneNumber.replace("976", "(976) ");
+// console.log(format);
+// // 4. Input: "I am fucking tired", 'fucking'
+// //    Haraaliin ugiin censor hiih
+// //    Output: "I am **** tired"
 
-let text = "I am fucking tired";
-// console.log(array);
-let output = text.replace("fucking", "****");
-console.log(output);
+// let text = "I am fucking tired";
+// // console.log(array);
+// let output = text.replace("fucking", "****");
+// console.log(output);
 
-// FIND
-const names = [
-  { name: "Alice", age: 20 },
-  { name: "Bob", age: 25 },
-  { name: "John", age: 30 },
-  { name: "Jane", age: 35 },
-  { name: "Joe", age: 40 },
-];
-const name2 = [
-  { name: "Andy", age: 20 },
-  { name: "Bilguun", age: 25 },
-  { name: "Jargalmaa", age: 30 },
-  { name: "Anguuch", age: 35 },
-  { name: "Mah", age: 40 },
-  { name: "Chinguun", age: 45 },
-];
+// // FIND
+// const names = [
+//   { name: "Alice", age: 20 },
+//   { name: "Bob", age: 25 },
+//   { name: "John", age: 30 },
+//   { name: "Jane", age: 35 },
+//   { name: "Joe", age: 40 },
+// ];
+// const name2 = [
+//   { name: "Andy", age: 20 },
+//   { name: "Bilguun", age: 25 },
+//   { name: "Jargalmaa", age: 30 },
+//   { name: "Anguuch", age: 35 },
+//   { name: "Mah", age: 40 },
+//   { name: "Chinguun", age: 45 },
+// ];
 // 1. FIND FIRST PERSON THAT NAME STARTS WITH 'C'
-let sum = [...names, ...name2];
-// console.log(sum);
+// let sum = [...names, ...name2];
+// // console.log(sum);
 
-let findPerson = sum.find((c) => {
-  return c.name[0] == "C";
+// let findPerson = sum.find((c) => {
+//   return c.name[0] == "C";
+// });
+// console.log(findPerson);
+// // 2. FIND FIRST PERSON THAT OLDER THAN 25
+// let findAge = sum.find((age) => {
+//   return age.age == 25;
+// });
+// console.log(findAge);
+
+// / Ene stringees nereern haihad zuvhun dugaarn garj ireh
+const contactsString =
+  "  Alice:99123456,  Bob:99678901,  Charlie:99543210,  David:99321098,  Eve:99234567,  Frank:99456789,  Grace:99789012,  Hannah:99876543,  Ivy:99987654,  Jack:99111234";
+let arr = contactsString.split(",");
+// console.log(arr);
+let oneContact = arr.map((contact) => {
+  return contact.split("'");
 });
-console.log(findPerson);
-// 2. FIND FIRST PERSON THAT OLDER THAN 25
-let findAge = sum.find((age) => {
-  return age.age == 25;
-});
-console.log(findAge);
+console.log(oneContact);
